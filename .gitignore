@@ -52,3 +52,4 @@ NEXTORK.SYS
 nextor_base.dat
 *.LST
 
+dist/

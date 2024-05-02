@@ -46,3 +46,14 @@ There are five makefiles that will take care of building the different component
 
 You may want to take a look at [this now closed pull request from Dean Netherton](https://github.com/Konamiman/Nextor/pull/79) that contains a different attempt at writing makefiles for bulding Nextor. It even has some nice extra features like building FDD and HDD images with Nextor, and building the `mknexrom` tool itself.
 
+## How to build Nextor on all platforms with Docker
+
+Using this method for building Nextor is easier. Everything you need for compiling Nextor already installed in the Docker image. If you have [Docker](https://www.docker.com) installed you can build Nextor on Linux, macOS and Windows, on Arm64 and Intel x86_64 by running the following command:
+
+```sh
+./build_nextor.sh
+```
+
+After compilation, the `ROM` files will be available in the `dist` directory.
+
+_Note that the `build_builder.sh` and the content in the `docker` directory are used to create the Docker builder image. You don't need to run them to build Nextor._
